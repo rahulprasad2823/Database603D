@@ -1,3 +1,4 @@
+//Query1
 //Collection and Document Creation with an Employee Details
 db.createCollection('Details')
 db.Details.insertOne({
