@@ -15,3 +15,5 @@ db.Details.insertOne({
     "Address": {
         "city": "Hyderabad",
         "Area": "Madapur",}})
+
+// Output: { "acknowledged" : true, "insertedId" : 123 }
