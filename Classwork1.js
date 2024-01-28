@@ -17,10 +17,10 @@ db.Details.insertOne({
         "city": "Hyderabad",
         "Area": "Madapur"}})
 
-// Output: {
+/* Output: {
   acknowledged: true,
   insertedId: 123
-}
+}*/
 
 //Query 2
 //Example for InsertOne()
@@ -49,10 +49,10 @@ db.Post.insertOne({
     ]
 }
 )
-//Output: {
+/*Output: {
   acknowledged: true,
   insertedId: ObjectId('65b5aaddf56d599b95f2576e')
-}
+}*/
 
 //Query 3
 //Example for insertMany()
@@ -104,11 +104,11 @@ db.Posts.insertMany([
         ]
     }
 ])
-//Output: {
+/*Output: {
   acknowledged: true,
   insertedIds: {
     '0': ObjectId('65b5afb0f56d599b95f25771'),
     '1': ObjectId('65b5afb0f56d599b95f25772')
   }
-}
+}*/
 
