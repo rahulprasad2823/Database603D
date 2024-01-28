@@ -49,6 +49,7 @@ db.Post.insertOne({
     ]
 }
 )
+
 /*Output: {
   acknowledged: true,
   insertedId: ObjectId('65b5aaddf56d599b95f2576e')
@@ -104,6 +105,7 @@ db.Posts.insertMany([
         ]
     }
 ])
+
 /*Output: {
   acknowledged: true,
   insertedIds: {
@@ -111,4 +113,5 @@ db.Posts.insertMany([
     '1': ObjectId('65b5afb0f56d599b95f25772')
   }
 }*/
+
 
