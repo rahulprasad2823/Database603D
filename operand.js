@@ -159,6 +159,7 @@ try:
     '''for db_name in client.list_database_names():
         print(db_name)*/''' #once sucessfully established connection
 except Exception as e:
+    print (e) 
 
 /* output
 PS'C:\Users\rahul\AppData\Local\Programs\Python\Python312\python.exe"c:/Users/hp/OneDrive/Desktop/Adv Data Base design/mangodb python.py"
