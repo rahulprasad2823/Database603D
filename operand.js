@@ -1,3 +1,5 @@
+//OPERATORS
+
 //and logic
 db.listingsAndReviews.find({$and: [{amenities: "Wifi"}, {amenities: "TV"}]}); 
 
@@ -28,8 +30,8 @@ db.grades.find({ _id: ObjectId("65b9b6f769c4895078585dc0") })
 db.listingsAndReviews.find({amenities: "Wifi"});
 
 //insertOne() 
-db.CreateColelction("SHU")
-db.SHU.insertOne({
+db.CreateColelction("Student")
+db.Student.insertOne({
   student_id: 654321,
   products: [
     {
@@ -54,7 +56,7 @@ db.SHU.insertOne({
 
 
 //insertMany()
-db.SHU.insertMany([
+db.Student.insertMany([
   {
     student_id: 546789,
     products: [
@@ -125,16 +127,16 @@ db.SHU.insertMany([
 
 
 //lesserthan
-db.SHU.find({ "products.score": { $lt: 59  } })
+db.Student.find({ "products.score": { $lt: 59  } })
 
 //lesserthanequalto
-db.SHU.find({ "products.score": { $lte: 58  } })
+db.Student.find({ "products.score": { $lte: 58  } })
 
 //greaterthan
-db.SHU.find({ "products.score: { $gt:59  } })
+db.Student.find({ "products.score: { $gt:59  } })
 
 //greaterthanequalto
-db.SHU.find({ "products.score": { $lt: 59  } })
+db.Student.find({ "products.score": { $lt: 59  } })
 
 //in
 db.grades.find({ student_id: { $in: [654321, 546789] } })
@@ -144,12 +146,12 @@ db.grades.find({ _id: { $in: [ObjectId('65b9b75969c4895078585dc1'), ObjectId('65
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 
-uri = “mongodb+srv://putireddylatha96:Plr$1996@cluster0.eehlqkd.mongodb.net/“
+uri = “mongodb+srv://rahulprasad2823:Rahul28@cluster0.clsgo0z.mongodb.net/?retryWrites=true&w=majority"
 
-# Create a new client and connect to the server
+//Create a new client and connect to the server
 client = MongoClient(uri, server_api=ServerApi('1'))
 
-# Send a ping to confirm a successful connection
+// Send a ping to confirm a successful connection
 try:
     client.admin.command('ping')
     print("Pinged your deployment. You successfully connected to MongoDB!")
@@ -157,6 +159,6 @@ try:
         print(db_name)*/''' #once sucessfully established connection
 except Exception as e:
 
-//output
+/* output
 PS'C:\Users\rahul\AppData\Local\Programs\Python\Python312\python.exe"c:/Users/hp/OneDrive/Desktop/Adv Data Base design/mangodb python.py"
-Pinged your deployment. You successfully connected to MongoDB!
+Pinged your deployment. You successfully connected to MongoDB! */
