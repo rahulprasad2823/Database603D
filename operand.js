@@ -137,7 +137,7 @@ db.Student.find({ "products.score": { $lte: 58  } })
 db.Student.find({ "products.score: { $gt:59  } })
 
 //greaterthanequalto
-db.Student.find({ "products.score": { $lt: 59  } })
+db.Student.find({ "products.score": { $gte: 59  } })
 
 //in
 db.grades.find({ student_id: { $in: [654321, 546789] } })
