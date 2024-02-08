@@ -16,7 +16,7 @@ db.podcasts.findOne({_id: ObjectId("6261a92dfee1ff300dc80bf1")});
   podcast_type: 'audio'
 } */
 
-//update()
+//to set the array
 db.podcasts.updateOne(
   {title: "The Developer Hub"},
   {$set: {topics: ["databases", "MongoDB"]}}
