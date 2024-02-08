@@ -1,5 +1,6 @@
 # CRUD OPERATIONS
 Intro: CRUD stands for Create, Read, Update, and Delete, and these operations represent the basic functions that can be performed on data in a database. 
+
 Create (C):
 Definition: Create refers to the operation of adding new data to a database.
 Example: Inserting a new record/document into a collection/table.
