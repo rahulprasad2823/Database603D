@@ -1,0 +1,10 @@
+//forFind&Modify
+db.podcasts.insertOne({
+  title: "The Atlas Podcast",
+  platforms: ["Apple Podcasts", "Spotify"],
+  downloads: 6012,
+});
+/* {
+  acknowledged: true,
+  insertedId: ObjectId('65c3b6bdb0031456d834f884')
+} */
