@@ -1,0 +1,40 @@
+from pymongo.mongo_client import MongoClient
+from pymongo.server_api import ServerApi
+import datetime
+import pprint
+
+uri = "mongodb+srv://rahulprasad2823:Rahul28@cluster0.clsgo0z.mongodb.net/?retryWrites=true&w=majority"
+
+# Create a new client and connect to the server
+client = MongoClient(uri, server_api=ServerApi('1'))
+
+try:
+    # Send a ping to confirm a successful connection
+    client.admin.command('ping')
+
+    # Get reference to 'bank' database
+    db = client.bank
+
+    # Get reference to 'accounts' collection
+    accounts_collection = db.accounts
+
+    # inserting one account
+    new_account = {
+        "account_holder": "Rahul Prasad",
+        "account_id": "RONV67890",
+        "account_type": "Saving",
+        "balance": 100000,
+        "last_updated": datetime.datetime.utcnow(),
+    }
+
+    # Write an expression that inserts the 'new_account' document into the 'accounts' collection.
+    result = accounts_collection.insert_one(new_account)
+
+    document_id = result.inserted_id
+    pprint.pprint(f"_id of inserted document: {document_id}")
+
+
+except Exception as e:
+    print(e)
+finally:
+    client.close()
