@@ -11,14 +11,14 @@ try:
     # Send a ping to confirm a successful connection
     client.admin.command('ping')
 
-    # Get reference to 'bank' database
+    # Get reference to 'animals' database
     db = client.animals
 
     # Get reference to 'animals' collection
     animals_collection = db.animals
  
  # Specify the ID of the document to update
-    id_to_update = ObjectId("65d62e9e9e5d0601ae3d684f")  # Example ID, replace with actual
+    id_to_update = ObjectId("65d62e9e9e5d0601ae3d684f")
 
     # Update fields in the document (modify as needed)
     update_data = {"$set": {"adoption_status": "Adopted"}}
