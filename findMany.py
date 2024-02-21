@@ -11,7 +11,7 @@ try:
     # Send a ping to confirm a successful connection
     client.admin.command('ping')
 
-    # Get reference to 'bank' database
+    # Get reference to 'animals' database
     db = client.animals
 
     # Get reference to 'animals' collection
